@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .board {
+            
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 5px;
+            justify-content: center;
+        }
+
+        .cell {
+            
+            border-radius: 10px;
+            background-color: rgba(0, 4, 255, 0.993);
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        .cell.taken {
+            pointer-events: none;
+        }
+h1{
+    color: white;
+}
+        .status {
+           
+            color: white;
+           
+                     
+             margin-top: 20px;
+          
+           
+            font-size: 18px;
+        }
+
+        button {
+            border-radius: 50px;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        .cell.taken {
+            
+      cursor: not-allowed;
+      color: rgb(251, 250, 249);
+    }
+    </style>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="board" id="board"></div>
+    <div class="status" id="status">Player X's turn</div>
+    <button onclick="resetGame()">Reset Game</button>
+
+    <script src="script.js">
+      
+    </script>
+</body>
+</html>
